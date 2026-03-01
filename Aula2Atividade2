@@ -1,0 +1,21 @@
+a) Qual a diferença entre: p++; (*p)++; *(++p)?
+
+De forma prática:
+
+int vet[] = {10,20,30};
+int *p = vet;
+p++; // p agora aponta pra vet[1]={20}
+(*p)++; //vet[1]=21, p continua apontando para vet[1]
+*(++p); //p passa a apontar vet[2]={30}, vet[2] passa a ser 31 
+
+
+b) O que quer dizer *(p+10)?
+
+(p+10) calcula o endereço 10 posições afrente de p;
+*() pega o valor nessa posição 
+
+De forma prática:
+
+int vet[10]={0,1,2,3,4,5,6,7,8,9}
+*p = vet;
+*(p+3);  // *p = vet[3] = {3}
